@@ -35,7 +35,7 @@ This is the most important part of this doc for me, so please read this as well.
 
 2. Again, if you plan on using relievers and bench, please fill out EVERY SPOT! This is to ensure the app does not crash and that you do not get any blank-named players (I will fix this in the future if it is a bad problem!).
 
-3. Future Ideas: Users can import lineups using a .txt file, you can choose how to replace who, and to make a real product which omits the user from having to click the strike/ball buttons (hitting something would automatically do it).
+3. Future Ideas: Users can import lineups using a .txt file, you can choose who to replace who, and to make a real product which omits the user from having to click the strike/ball buttons (hitting something would automatically do it).
 ---------------------------
 
 Sincerely,
