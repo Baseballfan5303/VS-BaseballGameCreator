@@ -7,4 +7,4 @@ An app allowing a user to play a baseball game based on where they throw the bal
 - More to come!
 
 # Version History:
-- April 26th -- Version 1.0.0 -- First Release
+- April 26/27th -- Version 1.0.0 -- First Release
