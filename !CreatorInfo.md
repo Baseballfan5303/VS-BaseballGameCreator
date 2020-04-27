@@ -3,6 +3,8 @@ Hi everyone,
 If you are here, I want to say thank you for downloading my app!
 
 1. Note that this is my first time publishing an app and so there many be bugs, irregular formatting, and annoying caveats I want to quick go over so this app is as smooth as possible for everyone!
+2. Directions - Use the buttons included in the app to navigate between four different screens (Title, Set Lineups/Rosters, Baseball Game, Game Log). You will enter your own players into the lineup spots and use the strike/ball buttons to simulate a real baseball game!
+3. This game has been designed for those who having pitching nets or even those who practice pitching and want to see how a real game might go if their pitch locations would occur.
 
 Title Screen:
 - Well if you got here, you mastered 1/2 of the title page! The other 1/2 is a button to send you to the set lineups screen.
