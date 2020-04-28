@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Mobile_BaseballGameCreator.BaseballGameScreen" Title="BaseballGameScreen">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="33"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="175"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Frame BorderColor="DarkSlateGray" Grid.RowSpan="2" Grid.ColumnSpan="3"/>
+        <StackLayout Margin="10,10,0,0" Grid.ColumnSpan="2">
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="ATNameT" Text="Team" FontSize="14"/>
+                <Label Text=" : " FontSize="16"/>
+                <Label x:Name="ATScoreT" Text=" Score" Margin="10,0,0,0" FontSize="16"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="HTNameT" Text="Team" FontSize="14"/>
+                <Label Text=" : " FontSize="16"/>
+                <Label x:Name="HTScoreT" Text=" Score" Margin="10,0,0,0" FontSize="16"/>
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" Orientation="Horizontal" Margin="-30,10,0,0">
+            <Label x:Name="topbotIndicator" Text="TOP" FontSize="30"/>
+            <Label x:Name="currentGameInning" Text=" 1" FontSize="30"/>
+        </StackLayout>
+
+        <StackLayout Grid.Column="2" Margin="-40,10,0,0">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="S"/>
+                <BoxView x:Name="strike1" Margin="10,0,0,0" Color="Black" CornerRadius="200" WidthRequest="18" HeightRequest="10"/>
+                <BoxView x:Name="strike2" Margin="10,0,0,0" Color="Black" CornerRadius="200" WidthRequest="18" HeightRequest="10"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="B"/>
+                <BoxView x:Name="ball1" Margin="10,0,0,0" Color="Black" CornerRadius="200" WidthRequest="18" HeightRequest="10"/>
+                <BoxView x:Name="ball2" Margin="10,0,0,0" Color="Black" CornerRadius="200" WidthRequest="18" HeightRequest="10"/>
+                <BoxView x:Name="ball3" Margin="10,0,0,0" Color="Black" CornerRadius="200" WidthRequest="18" HeightRequest="10"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="O"/>
+                <BoxView x:Name="out1" Margin="9,0,0,0" Color="Black" CornerRadius="200" WidthRequest="18" HeightRequest="10"/>
+                <BoxView x:Name="out2" Margin="10,0,0,0" Color="Black" CornerRadius="200" WidthRequest="18" HeightRequest="10"/>
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" Grid.Column="1" Margin="0,5,0,5" VerticalOptions="Start" HorizontalOptions="Center">
+            <BoxView x:Name="secondBase" Color="Black" WidthRequest="40"/>
+        </StackLayout>
+        <StackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Start"  VerticalOptions="End" Margin="5,0,0,5">
+            <BoxView x:Name="thirdBase" Color="Black"/>
+        </StackLayout>
+        <StackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,5,5">
+            <BoxView x:Name="firstBase" Color="Black"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" VerticalOptions="Center">
+            <Label Text="Click the button(s) below to change pitcher for:" HorizontalOptions="Center" FontSize="11" FontAttributes="Italic"/>
+            <Button Clicked="ChangeAwayPitcher_Click" x:Name="awayPitcherA" FontSize="14" HorizontalOptions="Center" Margin="0,15,0,0" BorderColor="Black" BorderWidth="1"/>
+            <Button Clicked="ChangeHomePitcher_Click" x:Name="homePitcherA" FontSize="14" HorizontalOptions="Center" Margin="0,15,0,0" BorderColor="Black" BorderWidth="1"/>
+        </StackLayout>
+
+        <Frame BorderColor="Black" Grid.Row="2" Grid.Column="1"/>
+        <StackLayout Grid.Row="2" Grid.Column="1" Orientation="Horizontal" VerticalOptions="Center">
+            <Button Text="LS" x:Name="leftS" Clicked="LStrike_Click" WidthRequest="50" HeightRequest="100" BorderColor="Black" BorderWidth="1"/>
+            <Button Text="MS" x:Name="midS" Clicked="MStrike_Click" WidthRequest="60" BorderColor="Black" BorderWidth="1"/>
+            <Button Text="RS" x:Name="rightS" Clicked="RStrike_Click" WidthRequest="50" HeightRequest="100" BorderColor="Black" BorderWidth="1"/>
+        </StackLayout>
+        <StackLayout Grid.Row="2" Grid.Column="1" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End">
+            <Button Text="Bottom Strike" x:Name="botS" Clicked="BStrike_Click" WidthRequest="175" BorderColor="Black" BorderWidth="1"/>
+        </StackLayout>
+        <StackLayout Grid.Row="2" Grid.Column="1" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Start">
+            <Button Text="Top Strike" x:Name="topS" Clicked="TStrike_Click" WidthRequest="175" BorderColor="Black" BorderWidth="1"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" Grid.Column="2" VerticalOptions="Center">
+            <Label Text="Click the button(s) below to replace a player on that team with someone from their bench:" HorizontalOptions="Center" FontSize="11" FontAttributes="Italic" Margin="5,0,0,0"/>
+            <Button Clicked="ChangeAwayPlayer_Click" x:Name="awayBenchA" FontSize="14" HorizontalOptions="Center" Margin="0,15,0,0" BorderColor="Black" BorderWidth="1"/>
+            <Button Clicked="ChangeHomePlayer_Click" x:Name="homeBenchA" FontSize="14" HorizontalOptions="Center" Margin="0,15,0,0" BorderColor="Black" BorderWidth="1"/>
+        </StackLayout>
+
+        <Button Grid.Row="3" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" Text="BALL" x:Name="BallButton" Clicked="Ball_Click" BorderColor="Black" BorderWidth="1"/>
+
+        <StackLayout Grid.Row="4" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="This will serve as the game's main action bar!" x:Name="ActionBar" FontAttributes="Bold" FontSize="14"/>
+        </StackLayout>
+
+        <ScrollView Grid.Row="5" Grid.ColumnSpan="3" Margin="10,0,10,0">
+            <StackLayout >
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Pitching:" FontAttributes="Bold" FontSize="12"/>
+                    <Label Text="  Player1"  x:Name="currentlyPText" FontAttributes="Bold" FontSize="12"/>
+                    <Label Text="  Pitches Thrown:" FontAttributes="Bold" FontSize="12"/>
+                    <Label Text="  00" x:Name="pitchesThrownText" FontAttributes="Bold" FontSize="12"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="At Bat:" FontAttributes="Bold" FontSize="12"/>
+                    <Label Text="  Player2" x:Name="atBatText" FontAttributes="Bold" FontSize="12"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="On Deck:" FontAttributes="Bold" FontSize="12"/>
+                    <Label Text="  Player3" x:Name="onDeckText" FontAttributes="Bold" FontSize="12"/>
+                    <Label Text="  In the Hole:" FontAttributes="Bold" FontSize="12"/>
+                    <Label Text="  Player4" x:Name="inTheHoleText" FontAttributes="Bold" FontSize="12"/>
+                </StackLayout>
+                <Button Clicked="GameOver_Click" Text="END GAME" x:Name="gameOverButton" BorderColor="Black" BorderWidth="1" WidthRequest="100"/>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

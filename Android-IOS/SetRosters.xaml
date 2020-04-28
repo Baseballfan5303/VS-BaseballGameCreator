@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Mobile_BaseballGameCreator.SetRosters" Title="SetRosters">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="35" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="175" />
+            <ColumnDefinition Width="175" />
+        </Grid.ColumnDefinitions>
+
+        <StackLayout Margin="15,15,0,0" Grid.ColumnSpan="4">
+            <Label Text="Set lineups for both teams:" FontSize="16" FontAttributes="Bold"/>
+        </StackLayout>
+
+        <Frame Grid.Row="1" BorderColor="Black" />
+        <ScrollView Grid.Row="1" Grid.ColumnSpan="2">
+            <StackLayout>
+                <Label Text="Away Team Name:" HorizontalOptions="Start" FontAttributes="Bold"/>
+                <Entry x:Name="ATName"/>
+            </StackLayout>
+        </ScrollView>
+
+        <Frame Grid.Row="1" Grid.Column="1" BorderColor="Black" />
+        <ScrollView Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
+            <StackLayout>
+                <Label Text="Home Team Name:" HorizontalOptions="Start" FontAttributes="Bold"/>
+                <Entry x:Name="HTName"/>
+            </StackLayout>
+        </ScrollView>
+
+        <Frame Grid.Row="2" BorderColor="Black" />
+        <ScrollView Grid.Row="2" Grid.Column="0">
+            <StackLayout>
+                <Label Text="LINEUP:" FontAttributes="Bold"/>
+                <Entry x:Name="ATBatter1" Placeholder="1"/>
+                <Entry x:Name="ATBatter2" Placeholder="2" />
+                <Entry x:Name="ATBatter3" Placeholder="3"/>
+                <Entry x:Name="ATBatter4" Placeholder="4"/>
+                <Entry x:Name="ATBatter5" Placeholder="5"/>
+                <Entry x:Name="ATBatter6" Placeholder="6"/>
+                <Entry x:Name="ATBatter7" Placeholder="7"/>
+                <Entry x:Name="ATBatter8" Placeholder="8"/>
+                <Entry x:Name="ATBatter9" Placeholder="9"/>
+            </StackLayout>
+        </ScrollView>
+
+        <Frame Grid.Row="2" Grid.Column="1" BorderColor="Black"/>
+        <ScrollView Grid.Row="2" Grid.Column="1">
+            <StackLayout >
+                <Label Text="LINEUP:" FontAttributes="Bold"/>
+                <Entry x:Name="HTBatter1" Placeholder="1"/>
+                <Entry x:Name="HTBatter2" Placeholder="2"/>
+                <Entry x:Name="HTBatter3" Placeholder="3"/>
+                <Entry x:Name="HTBatter4" Placeholder="4"/>
+                <Entry x:Name="HTBatter5" Placeholder="5" />
+                <Entry x:Name="HTBatter6" Placeholder="6"/>
+                <Entry x:Name="HTBatter7" Placeholder="7"/>
+                <Entry x:Name="HTBatter8" Placeholder="8"/>
+                <Entry x:Name="HTBatter9" Placeholder="9"/>
+            </StackLayout>
+        </ScrollView>
+
+        <Frame Grid.Row="3"  BorderColor="Black" />
+        <ScrollView Grid.Row="3" Grid.Column="0">
+            <StackLayout>
+                <Label Text="ROTATION, BULLPEN, and BENCH:" FontAttributes="Bold"/>
+                <Entry x:Name="ATSPitcher" Placeholder="SP"/>
+                <Entry x:Name="ATRPitcher1" Placeholder="RP"/>
+                <Entry x:Name="ATRPitcher2" Placeholder="RP"/>
+                <Entry x:Name="ATRPitcher3" Placeholder="RP"/>
+                <Entry x:Name="ATSetupMan" Placeholder="SU" />
+                <Entry x:Name="ATCloser" Placeholder="CL"/>
+                <Entry x:Name="ATBench1" Placeholder="BE"/>
+                <Entry x:Name="ATBench2" Placeholder="BE"/>
+                <Entry x:Name="ATBench3" Placeholder="BE"/>
+            </StackLayout>
+        </ScrollView>
+
+        <Frame Grid.Row="3" Grid.Column="1" BorderColor="Black" />
+        <ScrollView Grid.Row="3" Grid.Column="1">
+            <StackLayout >
+                <Label Text="ROTATION, BULLPEN, and BENCH:" FontAttributes="Bold"/>
+                <Entry x:Name="HTSPitcher" Placeholder="SP"/>
+                <Entry x:Name="HTRPitcher1" Placeholder="RP"/>
+                <Entry x:Name="HTRPitcher2" Placeholder="RP"/>
+                <Entry x:Name="HTRPitcher3" Placeholder="RP"/>
+                <Entry x:Name="HTSetupMan" Placeholder="SU"/>
+                <Entry x:Name="HTCloser" Placeholder="CL"/>
+                <Entry x:Name="HTBench1" Placeholder="BE"/>
+                <Entry x:Name="HTBench2" Placeholder="BE"/>
+                <Entry x:Name="HTBench3" Placeholder="BE"/>
+            </StackLayout>
+        </ScrollView>
+
+        <Button Clicked="nextScreen_Click" Grid.Row="4" Grid.ColumnSpan="5" Text="BEGIN THE GAME!" HorizontalOptions="Center" BorderColor="Black" BorderWidth="1" FontSize="10"/>
+        
+    </Grid>
+</ContentPage>
