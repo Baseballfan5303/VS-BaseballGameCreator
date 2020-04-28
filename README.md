@@ -13,3 +13,7 @@ An app allowing a user to play a baseball game based on where they throw the bal
 
 # Version History:
 - April 27th -- Version 1.0.0 -- First Release -- Windows
+
+# Basketball Game Creator!
+- The other app in this series I have created which uses the same concept as this but for basketball! You can find it in the Google Play and Microsoft Stores (*Soon)!
+- Link to its Github: https://github.com/Baseballfan5303/VS-BasketballGameCreator
