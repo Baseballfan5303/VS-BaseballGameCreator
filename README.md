@@ -8,6 +8,7 @@ An app allowing a user to play a baseball game based on where they throw the bal
 - More to come!
 
 # Tutorial Video Link:
+- https://vimeo.com/412552275
 
 # Version History:
 - April 27th -- Version 1.0.0 -- First Release
