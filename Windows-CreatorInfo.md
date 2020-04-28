@@ -33,7 +33,7 @@ This is the most important part of this doc for me, so please read this as well.
 
 1. When you play your game, you will notice that upon getting three outs, you have to click a Strike/Ball button again to get to the next half or full inning. Sorry that it does not automatically switch innings on only one click, but it does not affect pitchcount! Also, when you click the buttons to change a player, it will not update automatically as you will have to click the strike/ball button for it to change.
 
-2. Again, if you plan on using relievers and bench, please fill out EVERY SPOT! This is to ensure the app does not crash and that you do not get any blank-named players (I will fix this in the future if it is a bad problem!).
+2. Again, if you plan on using relievers and bench, please fill out EVERY SPOT! This is to ensure the app does not crash and that you do not get any blank-named players (I will fix this in the future if it is a bad problem).
 
 3. Future Ideas: Users can import lineups using a .txt file, you can choose who to replace who, and to make a real product which omits the user from having to click the strike/ball buttons (hitting something would automatically do it).
 ---------------------------
