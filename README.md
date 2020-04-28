@@ -3,7 +3,7 @@ An app allowing a user to play a baseball game based on where they throw the bal
 
 # Content within this Github:
 - A folder containing all the XAML & C# files I used to create the Windows version (Mobile soon).
-- The most important file: !CreatorInfo which details all screens, game directions, caveats, etc.
+- The most important files: !CreatorInfo which details all screens, game directions, caveats, etc. AND the Tutorial Video!
 - More to come!
 
 # Version History:
