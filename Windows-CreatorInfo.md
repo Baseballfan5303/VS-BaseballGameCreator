@@ -12,6 +12,7 @@ Title Screen:
 Set Lineups/Rosters Screen:
 * Use the text boxes to enter players of your choice!
 ** IF YOU PLAN ON USING RELIEVERS & BENCH, please be sure to fill out every single textbox! This to make sure you do not get any blank/null replacements or even crashes. Thank you and I plan to fix any problem users may have with this in the future.
+*** PLEASE BE SURE THE TEAMS YOU USE EACH HAVE MORE THAN 3 CHARACTERS IN THEIR NAME! This is an issue I plan on correcting in the near future! If your team name is only one or two characters long, the program will crash!
 - Once you have filled everything out, click the button to start the game!
 
 Baseball Game Screen:
@@ -24,8 +25,8 @@ Baseball Game Screen:
 - Bottom - This section tells you who is pitching and the amount of pitches they have thrown and who is at-bat, on-deck, and in-the-hole. The bottom-most button should be used to end the game when you desire.
 
 Game Log Screen:
-***** On this screen, you will see all the actions that happened in your game! You can enter extra notes at the top to be saved with your game log, but this is completely optional.
-****** Click the button at the bottom to save and you will be given a File Picker to save your Game Log wherever desired. *Note that it gives you a suggested name based on which teams you use!
+****** On this screen, you will see all the actions that happened in your game! You can enter extra notes at the top to be saved with your game log, but this is completely optional.
+******* Click the button at the bottom to save and you will be given a File Picker to save your Game Log wherever desired. *Note that it gives you a suggested name based on which teams you use!
 
 *CAVEATS AND CREATOR NOTES:*
 --------------------------
@@ -35,7 +36,9 @@ This is the most important part of this doc for me, so please read this as well.
 
 2. Again, if you plan on using relievers and bench, please fill out EVERY SPOT! This is to ensure the app does not crash and that you do not get any blank-named players (I will fix this in the future if it is a bad problem).
 
-3. Future Ideas: Users can import lineups using a .txt file, you can choose who to replace who, and to make a real product which omits the user from having to click the strike/ball buttons (hitting something would automatically do it).
+3. Again, PLEASE BE SURE THE TEAMS YOU USE EACH HAVE MORE THAN 3 CHARACTERS IN THEIR NAME! This is an issue I plan on correcting in the near future! If your team name is only one or two characters long, the program will crash!
+
+4. Future Ideas: Users can import lineups using a .txt file, you can choose who to replace who, and to make a real product which omits the user from having to click the strike/ball buttons (hitting something would automatically do it).
 ---------------------------
 
 Sincerely,
